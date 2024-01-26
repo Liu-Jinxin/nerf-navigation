@@ -353,7 +353,7 @@ class Estimator():
         #Propagated dynamics. x t|t-1
         #xt should be 12-vector
         self.xt = self.agent.drone_dynamics(self.xt, action)
-        self.action = action.clone().cpu().numpy().tolist()
+        self.action = action.clone().cpu().detach().numpy().tolist()
 
         #State estimate at t-1 is self.xt. Find jacobian wrt dynamics
         t1 = time.time()

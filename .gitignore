@@ -14,3 +14,9 @@ paths/*
 sim_img_cache/*
 .DS_Store
 stone_nerf
+*txt
+shencoder/build
+freqencoder/build
+gridencoder/build
+raymarching/build
+*.egg-info
